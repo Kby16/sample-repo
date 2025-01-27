@@ -4,7 +4,7 @@ const UserList = ({ users, onEdit, onDelete }) => {
   
   
   return (
-    <>
+    <div className="flex flex-col justify-center items-center">
     {users.length > 0 ? 
     <table border="1" style={{ width: "100%", textAlign: "left" }}>
     <thead>
@@ -36,7 +36,7 @@ const UserList = ({ users, onEdit, onDelete }) => {
     <h2>There is no list to show. Add to view, use Add User Button</h2>
     }
     
-    </>
+    </div>
   );
 };
 
